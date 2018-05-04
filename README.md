@@ -1,6 +1,6 @@
 [Demo](https://mudassir0909.github.io/perspective-transform/)
 
-> rough version of code <
+_code is a bit scratchy atm (shall refine it)_
 
 Left panel has images that you want to transform. #source-image
 
