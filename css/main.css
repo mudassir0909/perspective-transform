@@ -1,0 +1,64 @@
+html, body {
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.photoSelector,
+.preview {
+  height: 100%;
+}
+
+.photoSelector {
+  width: 400px;
+  background-color: #2E3235;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photoSelector__selectable {
+  flex-grow: 1;
+  height: 200px;
+  width: calc(50% - 10px);
+  background-repeat: no-repeat;
+  margin: 5px;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.photoSelector__selectable--selected {
+  outline: 2px solid #7CDEDC;
+}
+
+.preview {
+  flex-grow: 1;
+  padding: 16px;
+  background-color: #efefef;
+}
+
+.compositor {
+  position: relative;
+}
+
+.compositor__baseImage {
+  height: auto;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0 , 0.2);
+}
+
+.compositor__transformedElements {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.compositor__element {
+  transform-origin: 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
